@@ -39,8 +39,8 @@ export default function Login() {
 
 
   return (
-    <div className='login'>
-        <h1>Login Page</h1>
+    <div className='login' >
+        <h2>Login Page</h2>
         <input className='inputBox' type='email' placeholder='Enter Email' value={email} onChange={(e)=>{setEmail(e.target.value)}}/> 
         <input className='inputBox' type='password' placeholder='Enter Password' value={password} onChange={(e)=>{setPassword(e.target.value)}}/> 
         <button className='appButton' type='button' onClick={handleLogin}>Login</button>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Swal from 'sweetalert2';
+
 
 export default function AddProduct() {
    
@@ -28,7 +30,11 @@ export default function AddProduct() {
             result = await result.json();
             // console.warn(result);
             if(result){
-                alert("Product Added");
+                Swal.fire({
+                    title: "Add Product!",
+                    text: "Successfully Added!",
+                    icon: "success"
+                  });
                 setName('');
                 setPrice('');
                 setcatogery('');
@@ -44,6 +50,7 @@ export default function AddProduct() {
 
         
     <div className='add'>
+        <h2>Add Product</h2>
         <input type='text' className='inputBox' placeholder='Product Name'  value={name} onChange={(e)=>{setName(e.target.value)}}/> 
        
         { error && !name && <span className='invalid'>Enter valid name</span>}

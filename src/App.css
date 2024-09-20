@@ -51,19 +51,24 @@
   text-decoration: none;
 }
 .footer{
-  position: absolute;
+ 
+  width: 100%;
+  position: fixed;
   bottom: 0;
   text-align: center;
-  width: 100%;
+  height: auto;
   background-color: skyblue;
   
 }
 
 .singUp{
 text-align: center;
+
 }
 .register{
   margin-left: 30%;
+  margin-top: 100px;
+  
 }
 .login{
   margin-top: 100px;
@@ -116,4 +121,43 @@ text-align: center;
 
 .product-list ul{
   margin: 0;
+}
+
+
+.search-product-box{
+
+  width: 400px;
+  margin: 20px;
+  height: 40px;
+  border: 1px solid skyblue;
+  padding-left: 20px;
+}
+.btn-a a{
+  text-decoration: none;
+  color: #fff;
+
+}
+@media screen and (max-width: 750px) {
+  
+.register{
+  margin-left:10%;
+  padding-top: 20px;
+}
+h2{
+  margin: 25px;
+}
+.login{
+  margin-top: 100px;
+  margin-left: 10%;
+
+}
+.btn-a{
+  margin-top : 10px;
+}
+
+.add{
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right:20%;
+}
 }

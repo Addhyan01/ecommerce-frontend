@@ -46,7 +46,7 @@ export default function SignUp() {
 
   return (
     <div className='register'>
-        <h1>Register</h1>
+        <h2>SignUp</h2>
         <input className='inputBox' type='text' placeholder='Enter Name' value={name} onChange={(e) => {setName(e.target.value)}}/>
         <input className='inputBox' type='email' placeholder='Enter Email' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
         <input className='inputBox' type='password' placeholder='Enter Password' value={password} onChange={(e)=>{setPasword(e.target.value)}}/>
