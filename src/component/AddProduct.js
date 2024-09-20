@@ -26,7 +26,14 @@ export default function AddProduct() {
                 }
             });
             result = await result.json();
-            console.warn(result)
+            // console.warn(result);
+            if(result){
+                alert("Product Added");
+                setName('');
+                setPrice('');
+                setcatogery('');
+                setCompany('');
+            }
 
 
 
